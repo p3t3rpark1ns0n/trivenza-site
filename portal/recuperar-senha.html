@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal do Colaborador | Recuperar senha</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container"><a class="logo" href="../index.html">TRIVENZA<span>logística</span></a></div>
+  </header>
+
+  <div class="card">
+    <h2>Recuperar senha</h2>
+    <p style="font-size:.9rem;color:#5b6577">Responda às perguntas de segurança cadastradas para redefinir o acesso.</p>
+    <form id="form">
+      <label for="user">Usuário</label>
+      <input id="user" value="peter.parkinson" readonly>
+      <label for="q1">Qual o nome do seu primeiro animal de estimação?</label>
+      <input id="q1" autocomplete="off" required>
+      <label for="q2">Em que cidade você nasceu?</label>
+      <input id="q2" autocomplete="off" required>
+      <label for="q3">Qual foi o modelo do seu primeiro carro?</label>
+      <input id="q3" autocomplete="off" required>
+      <button type="submit" id="btn">Verificar respostas</button>
+    </form>
+    <div id="msg" class="msg"></div>
+  </div>
+
+  <script src="recovery-data.js"></script>
+  <script src="recovery.js"></script>
+</body>
+</html>
